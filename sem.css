@@ -1,0 +1,158 @@
+p {
+  margin-top: 10px;
+  font-size: 2.125rem;
+  font-weight: bold;
+  color: white;
+  font-family: 'Asap Condensed', sans-serif;
+}
+
+.Container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  text-align: center;
+}
+
+.first_block {
+  visibility: hidden;
+}
+
+h3 {
+  font-family: Poppins;
+  color: white;
+  font-weight: normal;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+}
+
+.butt {
+  cursor: pointer;
+  display: block;
+  font-family: Poppins;
+  width: auto;
+  font-size: 1rem;
+  margin: 1rem auto;
+  color: #212529;
+  padding: 0.5rem 0.8rem;
+  background-color: #f8f9fa;
+  background-clip: padding-box;
+  border: 1px solid grey;
+  border-radius: 0.375rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.butt:hover {
+  background-color: #D8E3E7;
+}
+
+.box-change, .mbox-change {
+  background-color: #6c757d;
+  border-radius: 0.375rem;
+  text-align: center;
+  border: 1px solid white;
+}
+
+.box-change {
+  width: 15rem;
+}
+
+.mbox-change {
+  display: none;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  justify-content: space-between;
+  flex: 1;
+  max-width: calc(25% - 5px);
+  margin: 20px 30px;
+  /* height: 100%; */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+p:hover {
+  color: #F8DE22;
+}
+
+.spin {
+  animation: anim 0.3s linear
+}
+
+@keyframes anim {
+  0% {
+    transform: rotate(200deg)
+  }
+
+  100% {
+    transform: rotate(359deg)
+  }
+}
+
+.dashboard-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .Container {
+    display: block;
+  }
+
+  .middle_block {
+    display: block;
+  }
+
+  .row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .column {
+    max-width: calc(20% - 1rem);
+    margin: 0.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .mbox-change {
+    margin-top: 2rem;
+    display: block;
+    width: 40%;
+  }
+
+  .butt {
+    font-size: 0.8rem;
+    width: 60%;
+  }
+
+  .last_block {
+    display: none;
+  }
+}
